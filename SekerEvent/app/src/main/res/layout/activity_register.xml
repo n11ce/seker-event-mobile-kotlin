@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/register_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="KAYIT OL"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/register_adsoyad_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="70dp"
+        android:hint="Ad-Soyad"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_title" />
+
+    <EditText
+        android:id="@+id/register_email_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Email Adresiniz"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/register_adsoyad_txt"
+        app:layout_constraintStart_toStartOf="@+id/register_adsoyad_txt"
+        app:layout_constraintTop_toBottomOf="@+id/register_adsoyad_txt" />
+
+    <EditText
+        android:id="@+id/register_telefon_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Telefon Numaranız"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/register_email_txt"
+        app:layout_constraintStart_toStartOf="@+id/register_email_txt"
+        app:layout_constraintTop_toBottomOf="@+id/register_email_txt" />
+
+    <EditText
+        android:id="@+id/register_dogumtarih_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Doğum Tarihiniz (01.01.2000)"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/register_telefon_txt"
+        app:layout_constraintStart_toStartOf="@+id/register_telefon_txt"
+        app:layout_constraintTop_toBottomOf="@+id/register_telefon_txt" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Şifrenizi Girin"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/register_dogumtarih_txt"
+        app:layout_constraintStart_toStartOf="@+id/register_dogumtarih_txt"
+        app:layout_constraintTop_toBottomOf="@+id/register_dogumtarih_txt" />
+
+    <Button
+        android:id="@+id/register_kayitol_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="KAYIT OL"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <Button
+        android:id="@+id/register_geridon_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="GERİ DÖN"
+        app:layout_constraintEnd_toEndOf="@+id/register_kayitol_btn"
+        app:layout_constraintStart_toStartOf="@+id/register_kayitol_btn"
+        app:layout_constraintTop_toBottomOf="@+id/register_kayitol_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

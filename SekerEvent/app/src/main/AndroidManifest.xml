@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Seker Event"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.YeniProje"
+        tools:targetApi="tiramisu"
+        android:enableOnBackInvokedCallback="true">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCVP2tVaRmKCqn6fgH8sEhKg1jm3JHwrPA" />
+        <!-- MainActivity - Uygulamanın ana ekranı -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" /> <!-- ForgotPasswordActivity - Şifre sıfırlama sayfası -->
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" /> <!-- LoginActivity - Uygulamanın giriş sayfası -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- RegisterActivity - Kayıt olma sayfası -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

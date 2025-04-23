@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="375dp"
+    android:layout_height="700dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="25dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="15dp"
+    android:background="#FFFFFF"
+    android:elevation="4dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+    <ImageView
+        android:id="@+id/imageViewEventt"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="24dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/textViewEventName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:text="Event Name"
+        android:textColor="#333333"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewEventDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:text="Event Date"
+        android:textColor="#666666"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewEventTimee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:text="Event Time"
+        android:textColor="#666666"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewEventVenue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:text="Event Venue"
+        android:textColor="#666666"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewEventCategoryy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:text="Event Category"
+        android:textColor="#666666"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewEventPromoter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp"
+        android:text="Event Promoter"
+        android:textColor="#333333"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:text="Kapat"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FF9800"
+        android:padding="12dp"
+        android:text="Favoriye Ekle"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonAddToCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:padding="12dp"
+        android:text="Takvime Ekle"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+</LinearLayout>

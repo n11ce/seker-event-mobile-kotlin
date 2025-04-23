@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".ProfileFragment">
+
+    <!-- Profil Düzenleme Başlık -->
+    <TextView
+        android:id="@+id/welcome_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Profil Düzenleme"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Profil Fotoğrafı -->
+    <ImageView
+        android:id="@+id/editProfileImageView"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/profil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_text2" />
+
+    <!-- Profil Resmini Değiştirme Butonu -->
+    <Button
+        android:id="@+id/change_profile_image_button"
+        android:layout_width="178dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="36dp"
+        android:text="Fotoğraf Değiştir"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editProfileImageView" />
+
+    <!-- Ad Soyad -->
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Ad-Soyad"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@id/change_profile_image_button"
+        app:layout_constraintStart_toStartOf="@id/change_profile_image_button"
+        app:layout_constraintTop_toBottomOf="@id/change_profile_image_button" />
+
+    <!-- Bildirim Almayı Seç -->
+    <CheckBox
+        android:id="@+id/notification_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:checked="true"
+        android:text="Bildirim almak istiyorum"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/edit_name"
+        app:layout_constraintStart_toStartOf="@id/edit_name"
+        app:layout_constraintTop_toBottomOf="@id/edit_name" />
+
+    <!-- Güncelle Butonu -->
+    <Button
+        android:id="@+id/update_profile_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF5722"
+        android:text="Güncelle"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/notification_checkbox"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@id/notification_checkbox"
+        app:layout_constraintTop_toBottomOf="@id/notification_checkbox" />
+
+    <!-- Çıkış Yap Butonu -->
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#FF5722"
+        android:text="ÇIKIŞ YAP"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/update_profile_button"
+        app:layout_constraintStart_toStartOf="@+id/update_profile_button"
+        app:layout_constraintTop_toBottomOf="@+id/update_profile_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
